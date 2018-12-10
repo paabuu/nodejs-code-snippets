@@ -15,14 +15,16 @@ rl.question('continue?(Y/n)', answer => {
         const timer = setInterval(() => {
             if (percent > 10) {
                 clearInterval(timer);
-                rl.write('\ndone.');
+                rl.prompt();
+                rl.write('done.');
                 rl.close();
                 return;
             }
 
-            const output = `${'='.repeat(percent)}>${' '.repeat(10 - percent)}${percent * 10}%`;
+            const output = `${'#'.repeat(percent)} ${' '.repeat(10 - percent)}${percent * 10}%`;
             const line = process.stdout.rows;
-            readline.cursorTo(process.stdout, 0, line);
+            // readline.cursorTo(process.stdout, 0, line);
+            rl.write(null, {ctrl: true, name: 'u'});
             rl.write(output);
             percent++;
         }, 300);
