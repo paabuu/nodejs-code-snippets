@@ -1,0 +1,1 @@
+cmd_Release/internal_field.node := c++ -bundle -undefined dynamic_lookup -Wl,-no_pie -Wl,-search_paths_first -mmacosx-version-min=10.7 -arch x86_64 -L./Release -stdlib=libc++  -o Release/internal_field.node Release/obj.target/internal_field/internal_field.o 
