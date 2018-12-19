@@ -19,6 +19,14 @@
     {
       "target_name": "internal_field",
       "sources": [ "internal_field.cc"]
+    },
+    {
+      "target_name": "add",
+      "sources": [ "add.cc" ]
+    },
+    {
+      "target_name": "myobject",
+      "sources": [ "c++_object/addon.cc", "c++_object/myobject.cc" ]
     }
   ]
 }

@@ -1,0 +1,1 @@
+cmd_Release/myobject.node := c++ -bundle -undefined dynamic_lookup -Wl,-no_pie -Wl,-search_paths_first -mmacosx-version-min=10.7 -arch x86_64 -L./Release -stdlib=libc++  -o Release/myobject.node Release/obj.target/myobject/c++_object/addon.o Release/obj.target/myobject/c++_object/myobject.o 

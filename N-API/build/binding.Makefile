@@ -3,4 +3,4 @@
 export builddir_name ?= ./build/.
 .PHONY: all
 all:
-	$(MAKE) myobject addon accessor template add internal_field object
+	$(MAKE) echo pet

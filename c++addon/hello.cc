@@ -4,16 +4,7 @@
 
 namespace demo {
 
-using v8::FunctionCallbackInfo;
-using v8::Function;
-using v8::Isolate;
-using v8::Local;
-using v8::Object;
-using v8::String;
-using v8::Value;
-using v8::Number;
-using v8::Array;
-using v8::Null;
+using namespace v8;
 using std::cout;
 using std::endl;
 
