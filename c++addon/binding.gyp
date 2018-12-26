@@ -27,6 +27,13 @@
     {
       "target_name": "myobject",
       "sources": [ "c++_object/addon.cc", "c++_object/myobject.cc" ]
+    },
+    {
+      "target_name": "idle",
+      "sources": [ "idle.cc" ],
+      "include_dirs": [
+        "<!(node -e \"require('nan')\")"
+      ] 
     }
   ]
 }

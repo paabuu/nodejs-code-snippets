@@ -5,7 +5,7 @@ const accessor = require('./build/Release/accessor');
 const internal = require('./build/Release/internal_field');
 const add = require('./build/Release/add');
 const addon2 = require('./build/Release/myobject');
-
+const addon3 = require('./build/Release/idle');
 // console.log(addon.hello());
 // addon.call((message) => {
 //     console.log(message);
@@ -27,6 +27,8 @@ const addon2 = require('./build/Release/myobject');
 
 // console.log(add(100, 200));
 
-const obj = addon2.MyObject(10);
-console.log(obj);
-console.log(obj.plusOne());
+// const obj = addon2.MyObject(10);
+// console.log(obj);
+// console.log(obj.plusOne());
+
+addon3.startIdle(10);
